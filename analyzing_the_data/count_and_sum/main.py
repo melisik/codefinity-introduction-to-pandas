@@ -8,9 +8,9 @@ cars_data = {'model': [None, 'audi A6', 'audi A4', None,'audi A1'],
 audi_cars = pd.DataFrame(cars_data)
 
 # Write your code below
-number_of_cells = ___
-total_price = ___
-null_count = ___
+number_of_cells = audi_cars.count()
+total_price = audi_cars['price'].sum()
+null_count = audi_cars.isna().sum()
 
 # Testing the result
 print('Missing values:')
